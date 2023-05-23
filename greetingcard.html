@@ -1,0 +1,45 @@
+<html>
+<div class ="greeting">
+<h1> hi,</h1>
+<h1 class="userName"> </h1>
+
+<p> nice to meet you.</p>
+<p> i'm aquazzura.</p>
+</div>
+<style>
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-top: 40px;
+    line-height: 3px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 3px;
+  margin-top: 10px;
+  }
+  .userName{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    font-style: italic;
+    font-weight: 100;
+  }
+</style>
+
+    <script>
+      const userName = document.querySelector('.userName');
+function greetUser() {
+  let nameAsk = prompt("Wait! What's your name?");
+  if (nameAsk != '') {
+    userName.textContent = `${nameAsk}.` 
+  } else {
+    userName.textContent = 'Stranger'
+  }
+}
+greetUser();
+
+</script>
+</html>
+
